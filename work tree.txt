@@ -1,0 +1,45 @@
+backend/
+├── controllers/
+│   ├── authController.js
+│   ├── loanController.js
+│   └── adminController.js
+├── models/
+│   ├── User.js
+│   ├── Loan.js
+│   └── Appointment.js
+├── routes/
+│   ├── authRoutes.js
+│   ├── loanRoutes.js
+│   └── adminRoutes.js
+├── utils/
+│   ├── generateQR.js
+│   └── emailService.js
+├── config/
+│   └── db.js
+├── .env
+├── server.js
+└── package.json
+
+
+frontend/
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── LoanCalculator.jsx
+│   │   ├── LoanCategories.jsx
+│   │   └── LoanForm.jsx
+│   ├── pages/
+│   │   ├── LandingPage.jsx
+│   │   ├── LoginPage.jsx
+│   │   ├── AdminDashboard.jsx
+│   │   └── UserDashboard.jsx
+│   ├── utils/
+│   │   ├── api.js
+│   │   └── validateInput.js
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── .env
+├── vite.config.js
+├── tailwind.config.js
+└── package.json
