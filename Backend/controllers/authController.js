@@ -1,6 +1,6 @@
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import pool from '../db/db.js';
+import pool from '../config/db.js';
 
 export const signup = async (req, res) => {
   const { name, email, password } = req.body;
