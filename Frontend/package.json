@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "@shadcn/ui": "^0.0.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "react-router-dom": "^7.1.3",
+    "redux": "^5.0.1",
+    "tailwindcss": "^4.0.0"
+  },
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "eslint.config.js",
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/totalnetsolution/SMIT-Final-Hackathon.git"
+  },
+  "author": "muhammad-danish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/totalnetsolution/SMIT-Final-Hackathon/issues"
+  },
+  "homepage": "https://github.com/totalnetsolution/SMIT-Final-Hackathon#readme"
+}
