@@ -19,12 +19,23 @@ app.use("/api/auth", authRoutes);
 app.use("/api/loans", loanRoutes);
 app.use("/api/admin", adminRoutes);
 
-// Database Connection
-mongoose
-  .connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log("MongoDB Connected"))
-  .catch((err) => console.error("Database Connection Error:", err));
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+const mongoURI = 'process.env.MONGO_URI';
+
+const connectDB = async () => {
+  try {
+    await mongoose.connect(mongoURI);
+    console.log('MongoDB connected successfully');
+  } catch (err) {
+    console.error('MongoDB connection error:', err.message);
+  }
+};
+
+export default connectDB;
 
 // Start Server
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

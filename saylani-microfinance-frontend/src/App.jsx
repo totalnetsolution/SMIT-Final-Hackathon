@@ -1,23 +1,24 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LandingPage from "./pages/LandingPage";
+import { Routes, Route } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
-import AdminDashboard from "./pages/AdminDashboard";
-import UserDashboard from "./pages/UserDashboard";
-import Navbar from "./components/Navbar";
+import RegisterPage from "./pages/RegisterPage";
+import DashboardAdmin from "./pages/DashboardAdmin";
+import DashboardUser from "./pages/DashboardUser";
+import LoanRequestPage from "./pages/LoanRequestPage";
+import Layout from "./components/Layout";
 
-const App = () => {
+function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/admin" element={<AdminDashboard />} />
-        <Route path="/dashboard" element={<UserDashboard />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<LoginPage />} />
+        <Route path="register" element={<RegisterPage />} />
+        <Route path="user-dashboard" element={<DashboardUser />} />
+        <Route path="admin-dashboard" element={<DashboardAdmin />} />
+        <Route path="loan-request" element={<LoanRequestPage />} />
+      </Route>
+    </Routes>
   );
-};
+}
 
 export default App;
