@@ -1,4 +1,4 @@
-import api from "./api";
+import api from "../utils/api";
 
 // Register a new user
 export const registerUser = async (userData) => {

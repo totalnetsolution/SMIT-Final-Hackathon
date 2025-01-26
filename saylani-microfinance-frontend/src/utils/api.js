@@ -1,6 +1,5 @@
 import axios from "axios";
 
-// Basic Axios instance without baseURL
 const api = {
   get: async (url, config = {}) => {
     try {
