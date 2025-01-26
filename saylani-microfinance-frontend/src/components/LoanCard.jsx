@@ -1,4 +1,3 @@
-// src/components/LoanCard.jsx
 export default function LoanCard({ title, subcategories, maxLoan, period }) {
     return (
       <div className="border rounded-lg p-4 shadow-lg">

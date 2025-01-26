@@ -1,4 +1,3 @@
-// src/components/LoanCalculator.jsx
 import { useState } from "react";
 
 export default function LoanCalculator() {

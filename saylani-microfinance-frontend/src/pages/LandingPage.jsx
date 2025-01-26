@@ -1,4 +1,3 @@
-// src/pages/LandingPage.jsx
 import LoanCard from "../components/LoanCard";
 import LoanCalculator from "../components/LoanCalculator";
 
